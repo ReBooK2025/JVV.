@@ -7,6 +7,86 @@
     <!-- Nova font Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* Assegura que la web s’adapti bé en mòbils */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fons i text centrats en mòbils */
+.fons {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ✅ Ajustos perquè el menú es vegi bé en mòbils */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .menu-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu-bar a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* ✅ Ajusta la mida del text en mòbils */
+@media screen and (max-width: 600px) {
+    .fons h1 {
+        font-size: 50px;
+    }
+    .fons p {
+        font-size: 18px;
+    }
+}
+
+/* ✅ Ajusta amplades dels apartats */
+@media screen and (max-width: 768px) {
+    .content {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* ✅ Formularis adaptats */
+@media screen and (max-width: 600px) {
+    .fila-llibres {
+        flex-direction: column;
+        text-align: center;
+    }
+    .botons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .botons button {
+        width: 100%;
+    }
+}
+
+/* ✅ Peu de pàgina adaptat per mòbils */
+@media screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
         /* Estils generals */
         body {
             font-family: 'Poppins', sans-serif; /* Canvi de font a Poppins */
@@ -297,7 +377,7 @@
     <div id="explanation" class="content">
         <h2>Estalvia un 90% de la compra de llibres</h2>
         <p>Com funciona el programa ReBooK?</p>
-        <p>El programa durarà les 3 primeres setmanes des del començamenmt de les calsses de l'institut. ReBooK consta de 3 fases que duraràn una setmana cada una.</p>
+        <p>El programa durarà les 3 primeres setmanes de curs. ReBooK consta de 3 fases que duraràn una setmana cada una.</p>
         <!-- Esquema gràfic del procés -->
         <div class="esquema">
             <div class="pas">
